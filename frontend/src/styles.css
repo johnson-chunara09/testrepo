@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #f4f6f8;
+  color: #1f2933;
+}
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e0e6ed;
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(16, 42, 67, 0.06);
+}
+
+h1, h2 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e0;
+  border-radius: 6px;
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+
+input:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: -1px;
+}
+
+button {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 18px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+button.secondary {
+  background: #e2e8f0;
+  color: #1f2933;
+}
+
+.error {
+  background: #fee2e2;
+  color: #991b1b;
+  border-radius: 6px;
+  padding: 10px 14px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.success {
+  background: #dcfce7;
+  color: #166534;
+  border-radius: 6px;
+  padding: 10px 14px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+nav {
+  background: #0f172a;
+  color: #fff;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 56px;
+}
+
+nav .brand {
+  font-weight: 700;
+  font-size: 17px;
+}
+
+nav a {
+  color: #cbd5e0;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 6px 8px;
+  border-radius: 4px;
+}
+
+nav a.active,
+nav a:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+nav .spacer {
+  flex: 1;
+}
+
+nav .user {
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid #e5e9f0;
+}
+
+th {
+  color: #64748b;
+  font-weight: 600;
+}
