@@ -22,3 +22,9 @@ export interface ChatMessage {
   text: string;
   sources?: string[];
 }
+
+export interface UserSummary {
+  id: number;
+  username: string;
+  role: 'ADMIN' | 'USER';
+}

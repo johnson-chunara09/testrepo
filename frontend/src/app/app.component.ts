@@ -13,6 +13,7 @@ import { AuthService } from './core/auth.service';
         <a routerLink="/chat" routerLinkActive="active">Ask Questions</a>
         @if (auth.isAdmin()) {
           <a routerLink="/admin" routerLinkActive="active">Manage Documents</a>
+          <a routerLink="/users" routerLinkActive="active">Manage Users</a>
         }
         <span class="spacer"></span>
         <span class="user">{{ auth.username() }} ({{ auth.isAdmin() ? 'Admin' : 'User' }})</span>

@@ -47,6 +47,7 @@ public class SecurityConfig {
                         session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/api/auth/**").permitAll()
+                        .requestMatchers("/api/users/**").hasRole("ADMIN")
                         .requestMatchers("/api/documents/**").hasRole("ADMIN")
                         .requestMatchers("/api/chat/**").authenticated()
                         .anyRequest().denyAll())
